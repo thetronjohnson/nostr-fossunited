@@ -1,40 +1,119 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>Let there be nostr</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	<style>
+		h5{
+			font-size: 30px;
+		}
+		.nostr{
+			color:#9f53fc;
+		}
+		.left-align{
+			text-align: left;
+		}
+		strong{
+			color:#9f53fc;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Let there be <span class="nostr">Nostr</span></h2>
+				<h5>A decentralised social media protocol that "could" work</h5>
+			</section>
+			<section data-markdown class="left-align">
+				<textarea data-template>
+					#### Kiran Johns
+					I slow down decision making at Hoppscotch
+
+					*ahem * Product Manager *ahem *
+					---
+					#### Nostr
+					*Notes and Other Stuff Transmitted by Relay*
+					
+					A simple, open protocol that enables a truly censorship-resistant and global social network.
+					---
+					### Big tech social media
+					* Keeps you addicted
+					* Sells you ads
+					* Monetizes "your" content
+					---
+					### Censorship
+					---
+					### How does Nostr work?
+					---
+					![Nostr Clients and Relays](https://nostr.how/images/nostr-network.webp)
+					---
+					![I'll start my own relay](examples/assets/relay-meme.jpg)
+					---
+					### Private & Public Keys
+					---
+					Fundamentally, you just exchange signed messages
+					---
+					### Nostr Implementation Possibilities
+					---
+					### Clients
+					---
+					- **Social**: Amethyst / Damus / Snort / Lume
+					- **Tools**: Nosbin / Listr / Pinstr
+					- **Messaging**: NostrChat
+					- **Blogs**: Yakihonne / Blogstack
+					---
+					![Lume](examples/assets/lume.png)
+					---
+					### Zaps
+					---
+					![Bitcoin](https://bitcoin.org/img/icons/logotop.svg)
+					---
+					![Zaps](examples/assets/zaps.png)
+					---
+					![Pinstr](examples/assets/pinstr.png)
+					---
+					### Contributing
+					- https://nostr.com/contribute
+					- https://github.com/nostr-protocol/
+					- https://github.com/luminous-devs/lume/
+					---
+					- https://kiranjohns.com/tags/nostr/
+					- @thetronjohnson on X/Twitter * smiles in capitalism and free speech
+					- k@trn.wiki on nostr
+					---
+					### Thank you for coming to my TED Talk
+					![Ted Talk](https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/02/Josh-Radnor-as-Old-Ted-in-How-I-Met-Your-Mother.jpg)
+				</textarea>
+			</section>
 		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
